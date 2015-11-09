@@ -3,17 +3,18 @@
 ### Scott Coyne - G00316578
 
 ## Introduction
-This project provides the design and documentation for the dataset "Playgrounds County Galway" which is Available at [https://data.gov.ie](https://data.gov.ie/data)
+This project provides the design and documentation for the dataset "Playgrounds County Galway" which is Available at [https://data.gov.ie](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7)
 
-The above dataset will be used to provied information about local playgrounds located in the County Galway area. Which could be implemented into an App or Website to provied the Location, Closing times, Amenities, Pictures of the playgound etc. 
+The above dataset will be used to provide information about local playgrounds located in the County Galway area. Which could be implemented into an App or Website to provide the Location, Closing times, Amenities, Pictures of the playground etc. 
 
-Given this information, this API would be able to show Real Time information about each playground. And would provide Parents/children and playground entuisests concreate information and pictures of the playgrounds, without having to drive to leave the house.
+Given this information, this API would be able to show Real Time information about each playground. And would provide Parents/children and playground enthusiasts concrete information and pictures of the playgrounds, without having to drive to leave the house.
 
-This Api could also be implemented accross serveral other counties, with a similar dataset.
+This API could also be implemented across several other counties, with a similar dataset.
+
 
 ## About The Data Provided
 
-This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie/dataset*](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7).
+This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie/dataset*](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7)
 The CSV file contains 63 rows, the first being a header row with the names of each field.
 
 There are sixteen values on each line, which are as follows:
@@ -45,7 +46,7 @@ There are sixteen values on each line, which are as follows:
 You can get a list of Playgrounds near you or in a specific area, based on the location (Location_o) using a GET method at the following URL:
 *http://playgrounds.ie/location/[Location_o]*
 
-From the url above, [Location_o] is where the user could enter in the location of where they want to be abe to find a playground, Eg Gort. The user would then be provided with a list of playgrounds with relevant data, in or close to that area. 
+From the URL above, [Location_o] is where the user could enter in the location of where they want to be able to find a playground, Eg: Roundstone. The user would then be provided with a list of playgrounds with relevant data, in or close to that area. 
 
 The data will be returned in JSON format, with the following properties for each Playground:
 
@@ -68,8 +69,8 @@ An example of a response from the URL: *http://playgrounds.ie/location/Roundston
     "Location_o":"Roundstone (Cloch na Ron)",
     "Playground":"Roundstone Village, Connemara",
     "AGE_GROUP":"0 to 16 Years",
-    "List_of_Eq":"Climber and Slide, Climber with Rope, Flat Swings, Cradle Swings, Crazy Goose, Springer",
-    "Liosta_Tre":"Dreapadóir le Sleamhnán, Luascán Cothrom,  Luascán Cliabháin , Lingeadan, Maide Corrach",
+    "List_of_Eq":"[Climber and Slide, Climber with Rope, Flat Swings, Cradle Swings, Crazy Goose, Springer]",
+    "Liosta_Tre":"[Dreapadóir le Sleamhnán, Luascán Cothrom,  Luascán Cliabháin , Lingeadan, Maide Corrach]",
     "PUBLIC_TOI":"No",
     "OPENING_HO":"Daylight Hours",
     "PARKING":"YES",
@@ -85,7 +86,7 @@ You can get a list of Playgrounds based on the recommended age group (AGE_GROUP)
 *http://playgrounds.ie/age/[AGE_GROUP]*
 
 
-From the url above, [AGE_GROUP] is where the user could enter in the age group for playgrounds that they are looking for Eg: 7. The user would then be provided with a list of playgrounds based on that age with relevant data. 
+From the URL above, [AGE_GROUP] is where the user could enter in the age group for playgrounds that they are looking for Eg: 7. The user would then be provided with a list of playgrounds based on that age with relevant data. 
 
 The data will be returned in JSON format, with the following properties for each Playground:
 
@@ -115,7 +116,7 @@ An example of a response from the URL: *http://playgrounds.ie/age/all* would be:
 
 You can get a list of Playgrounds based on the Equipment the playground has (List_of_Eq) using a GET method at the following URL:*http://playgrounds.ie/equipment/[List_of_Eq]*
 
-From the url above, [List_of_Eq] is where the user could enter in the type of equipment they want the playground to contain Eg: swings, slide. The user would then be provided  with a list of playgrounds that have the equipment there looking for.
+From the URL above, [List_of_Eq] is where the user could enter in the type of equipment they want the playground to contain Eg: swings, slide. The user would then be provided  with a list of playgrounds that have the equipment there looking for.
 
 The data will be returned in JSON format, with the following properties for each Playground:
 
@@ -136,8 +137,8 @@ An example of a response from the URL: *http://playgrounds.ie/equipment/slide* w
 1.
 ```json
 {
-    "List_of_Eq":"Roundabout, Rocker, Swing, Swing with Cradle  Seat, See Saw and Slide",
-    "Liosta_Tre":"Timpeallán, Luascaire, Luascáin, Maide Corrach , Sleamhnán",
+    "List_of_Eq":"[Roundabout, Rocker, Swing, Swing with Cradle  Seat, See Saw and Slide]",
+    "Liosta_Tre":"[Timpeallán, Luascaire, Luascáin, Maide Corrach , Sleamhnán]",
     "List_of_00":"None  Specified",
     "Location_o":"Ballinasloe (St. Michaels Place)",
     "Playground":"St. Michaels Place, Ballinasloe"
@@ -149,8 +150,8 @@ An example of a response from the URL: *http://playgrounds.ie/equipment/slide* w
 2.
 ```json
 {
-    "List_of_Eq":"Cable Runway, Basket Swing, Cradle Swings,  Toddlers Multiplay and Slide",
-    "Liosta_Tre":"Rúidchosán Cábla, Ciseán Luascadh, Luascáin, Aonad Ilspraoi Lapadáin le Sleamhnán",
+    "List_of_Eq":"[Cable Runway, Basket Swing, Cradle Swings,  Toddlers Multiplay and Slide]",
+    "Liosta_Tre":"[Rúidchosán Cábla, Ciseán Luascadh, Luascáin, Aonad Ilspraoi Lapadáin le Sleamhnán]",
     "List_of_00":"Basket Nest Swing &  Cradle Swing",
     "Location_o":"Moylough (Maigh Locha)",
     "Playground":"Ballinasloe"
