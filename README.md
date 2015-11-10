@@ -66,16 +66,16 @@ The data will be returned in JSON format, with the following properties for each
 An example of a response from the URL: *http://playgrounds.ie/location/Roundstone* would be:
 ```json
 {
-    "Location_o":"Roundstone (Cloch na Ron)",
-    "Playground":"Roundstone Village, Connemara",
-    "AGE_GROUP":"0 to 16 Years",
-    "List_of_Eq":"[Climber and Slide, Climber with Rope, Flat Swings, Cradle Swings, Crazy Goose, Springer]",
-    "Liosta_Tre":"[Dreapadóir le Sleamhnán, Luascán Cothrom,  Luascán Cliabháin , Lingeadan, Maide Corrach]",
-    "PUBLIC_TOI":"No",
-    "OPENING_HO":"Daylight Hours",
-    "PARKING":"YES",
-    "PHOTO":"http://www.galway.ie/gis/playgrounds/1.jpg"
-  }
+    "Location_o": "Roundstone (Cloch na Ron)",
+    "Playground": "Roundstone Village, Connemara",
+    "AGE_GROUP": "0 to 16 Years",
+    "List_of_Eq": "[Climber and Slide, Climber with Rope, Flat Swings, Cradle Swings, Crazy Goose, Springer]",
+    "Liosta_Tre": "[Dreapadóir le Sleamhnán, Luascán Cothrom,  Luascán Cliabháin , Lingeadan, Maide Corrach]",
+    "PUBLIC_TOI": "No",
+    "OPENING_HO": "Daylight Hours",
+    "PARKING": "YES",
+    "PHOTO": "http://www.galway.ie/gis/playgrounds/1.jpg"
+}
 ```
 
 
@@ -102,12 +102,12 @@ The data will be returned in JSON format, with the following properties for each
 An example of a response from the URL: *http://playgrounds.ie/age/all* would be:
 ```json
 {
-    "AGE_GROUP":"ALL",
-    "Location_o":"An Cloigeann",
-    "Playground":"Cleggan",
-    "OPENING_HO":"Available when Community  Centre is in use",
-    "PHOTO":"http://www.galway.ie/gis/playgrounds/2.jpg"
-  }
+    "AGE_GROUP": "ALL",
+    "Location_o": "An Cloigeann",
+    "Playground": "Cleggan",
+    "OPENING_HO": "Available when Community  Centre is in use",
+    "PHOTO": "http://www.galway.ie/gis/playgrounds/2.jpg"
+}
 ```
 
 
@@ -137,28 +137,28 @@ An example of a response from the URL: *http://playgrounds.ie/equipment/slide* w
 1.
 ```json
 {
-    "List_of_Eq":"[Roundabout, Rocker, Swing, Swing with Cradle  Seat, See Saw and Slide]",
-    "Liosta_Tre":"[Timpeallán, Luascaire, Luascáin, Maide Corrach , Sleamhnán]",
-    "List_of_00":"None  Specified",
-    "Location_o":"Ballinasloe (St. Michaels Place)",
-    "Playground":"St. Michaels Place, Ballinasloe"
-    "AGE_GROUP":"1-12 Years"
-    "OPENING_HO":"DayLight Hours"
-    "PHOTO":"http://www.galway.ie/gis/playgrounds/8.jpg"
-  }
+    "List_of_Eq": "['Roundabout', 'Rocker', 'Swing', 'SwingwithCradleSeat', 'SeeSawandSlide']",
+    "Liosta_Tre": "['Timpeallán', 'Luascaire', 'Luascáin', 'MaideCorrach' , 'Sleamhnán']",
+    "List_of_00": "None  Specified",
+    "Location_o": "Ballinasloe (St. Michaels Place)",
+    "Playground": "St. Michaels Place, Ballinasloe",
+    "AGE_GROUP": "1-12 Years",
+    "OPENING_HO": "DayLight Hours",
+    "PHOTO": "http://www.galway.ie/gis/playgrounds/8.jpg"
+}
 ```
 2.
 ```json
 {
-    "List_of_Eq":"[Cable Runway, Basket Swing, Cradle Swings,  Toddlers Multiplay and Slide]",
-    "Liosta_Tre":"[Rúidchosán Cábla, Ciseán Luascadh, Luascáin, Aonad Ilspraoi Lapadáin le Sleamhnán]",
-    "List_of_00":"Basket Nest Swing &  Cradle Swing",
-    "Location_o":"Moylough (Maigh Locha)",
-    "Playground":"Ballinasloe"
-    "AGE_GROUP":"0-12 Years"
-    "OPENING_HO":"DayLight Hours"
-    "PHOTO":"http://www.galway.ie/gis/playgrounds/13.jpg"
-  }
+    "List_of_Eq": "['Cable Runway', 'Basket Swing', 'Cradle Swings',  'Toddlers Multiplay and Slide']",
+    "Liosta_Tre": "['Rúidchosán Cábla', 'Ciseán Luascadh', 'Luascáin', 'Aonad Ilspraoi Lapadáin le Sleamhnán']",
+    "List_of_00": "Basket Nest Swing &  Cradle Swing",
+    "Location_o": "Moylough (Maigh Locha)",
+    "Playground": "Ballinasloe",
+    "AGE_GROUP": "0-12 Years",
+    "OPENING_HO": "DayLight Hours",
+    "PHOTO": "http://www.galway.ie/gis/playgrounds/13.jpg"
+}
 ```
 
 
