@@ -1,7 +1,7 @@
 # Data-Representation-and-Querying
-
+ 
 ### Scott Coyne - G00316578
-
+ 
 ## Introduction
 This project provides the design and documentation for the dataset "Playgrounds County Galway" which is Available at [https://data.gov.ie](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7)
 
@@ -11,7 +11,7 @@ Given this information, this API would be able to show Real Time information abo
 
 This API could also be implemented across several other counties, with a similar dataset.
 
-
+</br>
 ## About The Data Provided
 
 This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie/dataset*](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7)
@@ -38,10 +38,10 @@ There are sixteen values on each line, which are as follows:
 | PARKING | If parking is available, Eg: Yes/No
 | PHOTO | Provides a link to a photograph of the park Eg: http://www.galway.ie/gis/playgrounds/2.jpg
 
-
+</br>
 ## Design Ideas For An API'S URL
 
-#### Playgrounds In My Area
+#### 1.Playgrounds In My Area
 
 You can get a list of Playgrounds near you or in a specific area, based on the location (Location_o) using a GET method at the following URL:
 *http://playgrounds.ie/location/[Location_o]*
@@ -77,10 +77,8 @@ An example of a response from the URL: *http://playgrounds.ie/location/Roundston
     "PHOTO": "http://www.galway.ie/gis/playgrounds/1.jpg"
 }
 ```
-
-
-
-#### Playgrounds By Age Group
+</br>
+#### 2.Playgrounds By Age Group
 
 You can get a list of Playgrounds based on the recommended age group (AGE_GROUP) using a GET method at the following URL:
 *http://playgrounds.ie/age/[AGE_GROUP]*
@@ -109,10 +107,8 @@ An example of a response from the URL: *http://playgrounds.ie/age/all* would be:
     "PHOTO": "http://www.galway.ie/gis/playgrounds/2.jpg"
 }
 ```
-
-
-
-#### Playgrounds With Specific Equipment
+</br>
+#### 3.Playgrounds With Specific Equipment
 
 You can get a list of Playgrounds based on the Equipment the playground has (List_of_Eq) using a GET method at the following URL:*http://playgrounds.ie/equipment/?[List_of_Eq]=slide*
 
@@ -162,10 +158,8 @@ An example of a response from the URL:
     "PHOTO": "http://www.galway.ie/gis/playgrounds/13.jpg"
 }
 ```
-
-
-
-#### Playgrounds By Location
+</br>
+#### 4.Playgrounds By Location
 
 You can get a list of Playgrounds and all associated data based on the **X** and **Y**  location of the playground, using [X] [Y]. The following GET method could be used to list out all the possible playgrounds closest to those positions using the following URL: 
 *http://playgrounds.ie/Playgrounds/Location?X=longitude%20Y=latitude*
@@ -212,11 +206,8 @@ An example of a response from a get method from the URL: *http://playgrounds.ie/
     "PHOTO": "http://www.galway.ie/gis/playgrounds/10.jpg"
 }
 ```
-
-
-
-
-#### Playgrounds By Rating
+</br>
+#### 5.Playgrounds By Rating
 
 From the dataset given in [https://data.gov.ie](https://data.gov.ie/dataset/playgrounds-county-galway/resource/019cf36c-7da9-4d0b-9bcd-7ac647a1b1c7), another possible feature could be added to the dataset to include a "RATING" for each park. Which would allow users to display all playgrounds by their average Rating .
 
@@ -261,7 +252,7 @@ An example of a response from a get method from the URL: *http://playgrounds.ie/
     "PHOTO": "http://www.galway.ie/gis/playgrounds/10.jpg"
 }
 ```
-
+</br>
 ##Conclusion
 From the dataset supplied, other urls could be added using Get and Post methods for adding new equipment, adding new playgrounds or changing [Managed_By] if the playground changed management. But from the the URLs listed above, they cover the main requirements needed when accessing the dataset.
 
