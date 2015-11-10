@@ -63,7 +63,7 @@ The data will be returned in JSON format, with the following properties for each
 | PHOTO | Provides a link to a photograph of the park Eg: http://www.galway.ie/gis/playgrounds/1.jpg
 
 
-An example of a response from the URL: *http://playgrounds.ie/location/Roundstone* would be:
+An example of a response from the URL: *http://playgrounds.ie/location/Roundstone.json?print=pretty* would be:
 ```json
 {
     "Location_o": "Roundstone (Cloch na Ron)",
@@ -99,7 +99,7 @@ The data will be returned in JSON format, with the following properties for each
 | PHOTO | Provides a link to a photograph of the park Eg: http://www.galway.ie/gis/playgrounds/2.jpg
 
 
-An example of a response from the URL: *http://playgrounds.ie/age/all* would be:
+An example of a response from the URL: *http://playgrounds.ie/age/all.json?print=pretty* would be:
 ```json
 {
     "AGE_GROUP": "ALL",
@@ -132,7 +132,7 @@ The data will be returned in JSON format, with the following properties for each
 | PHOTO | Provides a link to a photograph of the park Eg: http://www.galway.ie/gis/playgrounds/8.jpg
 
 
-An example of a response from the URL: *http://playgrounds.ie/equipment/slide* would be:
+An example of a response from the URL: *http://playgrounds.ie/equipment/slide.json?print=pretty* would be:
 
 1.
 ```json
@@ -160,6 +160,3 @@ An example of a response from the URL: *http://playgrounds.ie/equipment/slide* w
     "PHOTO": "http://www.galway.ie/gis/playgrounds/13.jpg"
 }
 ```
-
-
-
